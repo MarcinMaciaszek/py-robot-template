@@ -1,6 +1,6 @@
 ### py-robot-template
 
-[![Codecov](https://codecov.io/gh/MarcinMaciaszek/py-robot-template/branch/main/graph/badge.svg)](https://codecov.io/gh/MarcinMaciaszek/py-robot-template) [![GitHub Actions Workflow Status](https://github.com/MarcinMaciaszek/py-robot-template/actions/workflow/status/release.yml?branch=main)](https://github.com/MarcinMaciaszek/py-robot-template/actions)
+[![Codecov](https://codecov.io/gh/MarcinMaciaszek/py-robot-template/branch/main/graph/badge.svg)](https://codecov.io/gh/MarcinMaciaszek/py-robot-template) [![CI](https://github.com/MarcinMaciaszek/py-robot-template/actions/workflows/ci.yml/badge.svg)](https://github.com/MarcinMaciaszek/py-robot-template/actions/workflows/ci.yml)
 
 py-robot-template is a template project demonstrating how to create a Python package for use with RobotFramework.
 
