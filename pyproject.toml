@@ -1,0 +1,28 @@
+[project]
+name = "py-robot-template"
+version = "0.1.0"
+description = "Tempalte project for handling RobotFramework tests projects using python."
+readme = "README.md"
+authors = [
+    { name = "MarcinMaciaszek", email = "marcin.maciaszek@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "robotframework>=7.3.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+# Możesz dodać opcje konfiguracyjne, np.:
+# pypi-url = "https://pypi.org/simple"
+# lockfile = "uv.lock"
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "mypy",
+    "coverage",
+]

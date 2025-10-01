@@ -1,0 +1,29 @@
+repos:
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.4.7
+    hooks:
+      - id: ruff
+        args: ["--fix"]
+      - id: ruff-format
+        name: Ruff format check
+        entry: ruff format --check .
+        language: system
+        pass_filenames: false
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.9.0
+    hooks:
+      - id: mypy
+        args: ["--strict", "--allow-untyped-decorators"]
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.9.0
+    hooks:
+      - id: python-check-blanket-noqa
+  - repo: local
+    hooks:
+      - id: coverage-tests
+        name: Run unit tests with coverage
+        entry: uv run coverage run -m unittest discover tests/unit
+        language: system
+        pass_filenames: false
+        always_run: true
+        verbose: true
