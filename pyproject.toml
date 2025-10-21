@@ -11,6 +11,15 @@ dependencies = [
     "robotframework>=7.3.2",
 ]
 
+[project.urls]
+Homepage = "https://github.com/MarcinMaciaszek/py-robot-template"
+Source = "https://github.com/MarcinMaciaszek/py-robot-template"
+Tracker = "https://github.com/MarcinMaciaszek/py-robot-template/issues"
+Changelog = "https://github.com/MarcinMaciaszek/py-robot-template/releases"
+Documentation = "https://github.com/MarcinMaciaszek/py-robot-template#readme"
+CI = "https://github.com/MarcinMaciaszek/py-robot-template/actions"
+PyPI = "https://pypi.org/project/py-robot-template/"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
